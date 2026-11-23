@@ -1,0 +1,26 @@
+<!-- Set The Password -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Password Validation Form</title>
+</head>
+
+<body>
+
+    <h2>Password Validation Form</h2>
+
+    <form id="passwordForm">
+        <label for="password">Password :</label>
+
+        <input type="password" id="password" required
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&#]{10,15}$"
+            title="Password must be 10 to 15 characters long, including at least one uppercase letter, one lowercase letter, one digit, and optional special character.">
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
