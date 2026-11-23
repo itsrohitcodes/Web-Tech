@@ -1,0 +1,29 @@
+<!-- Formulate the Perfect Password -->
+
+<!DOCTYPE html>
+
+<head>
+    <title>Password Validation</title>
+</head>
+
+<body>
+
+    <form>
+        <label for="password">Password :</label>
+        <input type="password" id="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])[A-Za-z\d@$!%*?&#]{8,12}$"
+            required>
+
+        <small>
+            Must be 8 to 12 characters long, include at least one
+            uppercase letter and one lowercase letter. Special characters are
+            allowed but not required.
+        </small>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
